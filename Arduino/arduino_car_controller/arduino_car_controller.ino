@@ -84,10 +84,8 @@ void loop() {
     turn_angle = 100 * instruction[3] + 10 * instruction[4] + instruction[5];
 
     // If values are out of bounds, assume error and return to neutral position
-    if ((drive_speed>180) || (drive_speed<0)){
+    if ( (drive_speed>180) || (drive_speed<0) || (turn_angle>180) || (turn_angle<0) ){
       drive_speed = 90;
-    }
-    if ((turn_angle>180) || (turn_angle<0)){
       turn_angle = 90;
     }
 
