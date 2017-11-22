@@ -1,1 +1,1 @@
-# Miniature-Autonomous-Car
+# Project Intelligent Car
